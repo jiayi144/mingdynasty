@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>苍茫明途：人生浮沉录</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- 顶部古风面板：状态栏 -->
+        <header class="status-bar">
+            <div class="status-item"><span class="icon">❤️</span>健康 <span id="val-health">100</span></div>
+            <div class="status-item"><span class="icon">💰</span>资产 <span id="val-money">$0</span></div>
+            <div class="status-item"><span class="icon">👑</span>地位 <span id="val-status">1</span></div>
+            <div class="status-item"><span class="icon">📜</span>学识 <span id="val-knowledge">0</span></div>
+        </header>
+
+        <!-- 卷轴剧情展示区 -->
+        <main class="scroll-box">
+            <div id="story-text" class="story-content"></div>
+        </main>
+
+        <!-- 交互选择区 -->
+        <footer id="choices-container" class="choices-area">
+            <!-- 动态生成选项按钮 -->
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

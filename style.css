@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #1a1612 url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1000') no-repeat center center fixed;
+    background-size: cover;
+    font-family: "STKaiti", "KaiTi", serif;
+    color: #2c221e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.game-container {
+    width: 90%;
+    max-width: 680px;
+    height: 85vh;
+    background: #f4eae1;
+    border: 12px solid #5c3a21;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.8), inset 0 0 20px rgba(92,58,33,0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 顶部状态栏 */
+.status-bar {
+    background: #3e2723;
+    color: #e0d0c0;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 3px solid #8d6e63;
+}
+
+.status-item span {
+    color: #ffb74d;
+}
+
+/* 剧情故事卷轴区 */
+.scroll-box {
+    flex: 1;
+    padding: 25px;
+    overflow-y: auto;
+    background: radial-gradient(circle, #f9f3ec 0%, #e8d8c8 100%);
+}
+
+.story-content {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    letter-spacing: 1px;
+}
+
+.story-title {
+    font-family: 'Ma Shan Zheng', cursive, serif;
+    font-size: 2.2rem;
+    text-align: center;
+    color: #8b0000;
+    margin-bottom: 15px;
+}
+
+/* 选择按钮区 */
+.choices-area {
+    padding: 15px 20px;
+    background: #2b1d14;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.choice-btn {
+    background: linear-gradient(180deg, #8d6e63 0%, #4e342e 100%);
+    color: #fff8e7;
+    border: 1px solid #d7ccc8;
+    padding: 12px 18px;
+    font-size: 1.1rem;
+    font-family: "STKaiti", "KaiTi", serif;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.choice-btn:hover {
+    background: linear-gradient(180deg, #b1816e 0%, #6d4c41 100%);
+    border-color: #ffe0b2;
+    transform: translateX(4px);
+}
+
+.input-box {
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    border: 1px solid #8d6e63;
+    outline: none;
+    margin-bottom: 8px;
+}
